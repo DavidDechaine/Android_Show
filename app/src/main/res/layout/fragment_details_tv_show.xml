@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp"
+            tools:context=".ui.details.DetailsTvShowFragment">
+        <ImageView
+                android:layout_width="161dp"
+                android:layout_height="211dp" tools:src="@tools:sample/avatars" android:id="@+id/tvShowImgDetails"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="16dp" android:layout_marginStart="16dp"
+                android:contentDescription="@string/show_image_desc_temp" tools:ignore="ImageContrastCheck"/>
+        <TextView
+                android:text="@string/title_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/tvShowTitle"
+                app:layout_constraintStart_toEndOf="@+id/tvShowImgDetails"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="16dp"/>
+        <TextView
+                android:text="@string/annee_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/tvShowYear"
+                app:layout_constraintStart_toEndOf="@+id/tvShowImgDetails"
+                app:layout_constraintTop_toBottomOf="@+id/tvShowTitle"
+                android:layout_marginTop="32dp"/>
+        <TextView
+                android:text="@string/episode_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/tvShowNbEpisodes"
+                app:layout_constraintTop_toBottomOf="@+id/tvShowYear"
+                app:layout_constraintStart_toEndOf="@+id/tvShowImgDetails"
+                android:layout_marginTop="32dp"/>
+        <TextView
+                android:text="@string/description_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/tvShowDescription"
+                app:layout_constraintTop_toBottomOf="@+id/tvShowImgDetails"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp" android:layout_marginTop="16dp"/>
+        <TextView
+                android:text="@string/cast_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/castLabel"
+                app:layout_constraintTop_toBottomOf="@+id/tvShowDescription"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp" android:layout_marginStart="16dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="0dp"
+                android:layout_height="225dp"
+                app:layout_constraintTop_toBottomOf="@+id/castLabel" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="12dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:id="@+id/rvCast"/>
+        <TextView
+                android:text="@string/seasons_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView8"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/rvCast" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="0dp"
+                android:layout_height="225dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="8dp" app:layout_constraintHorizontal_bias="0.0" android:id="@+id/rvSeasons"
+        />
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@android:drawable/btn_star_big_off"
+                android:id="@+id/btnFavorite"
+                app:layout_constraintStart_toEndOf="@+id/tvShowImgDetails"
+                android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/tvShowNbEpisodes"
+                android:contentDescription="@string/favorite_button"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

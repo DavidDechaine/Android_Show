@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">TP1</string>
+    <string name="title_home">Home</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_login">Login</string>
+    <string name="login_title">Login</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="sign_in_text">Sign In</string>
+    <string name="details_fragment_title">Details</string>
+    <string name="show_image_desc_temp">Show image</string>
+    <string name="title_temp">Title</string>
+    <string name="annee_temp">Annee</string>
+    <string name="episode_temp">Episode</string>
+    <string name="description_temp">Description</string>
+    <string name="cast_label">Cast</string>
+    <string name="seasons_label">Seasons</string>
+    <string name="season_title_pos_0">Season</string>
+    <string name="episode_season_pos_1">Episodes</string>
+    <string name="image_tv_show">image Tv Show</string>
+    <string name="image_actor">Image Actor</string>
+    <string name="image_season">Image Season</string>
+    <string name="favorite_button">favorite button</string>
+</resources>
