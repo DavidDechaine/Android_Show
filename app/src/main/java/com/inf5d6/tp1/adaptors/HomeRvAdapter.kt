@@ -27,9 +27,12 @@ class HomeRvAdapter (private val tvshowList: MutableList<DetailsTvShow>):
     }
 
     override fun onBindViewHolder(holder: TvShowViewHolder, position: Int) {
+        //Binding thes view to variables
         val imgTvSHow = holder.view.findViewById<ImageView>(R.id.tvShowImg)
         val tvShowId = tvshowList[position].tvshowId
+        //Displaying the tv show pictures with Picasso
         Picasso.get().load(this.tvshowList[position].imgURL).into(imgTvSHow)
+        //Setting the onClickListener to navigate to the tv show details
         imgTvSHow.setOnClickListener{
             val bundle = bundleOf(Pair("idTvShow", tvShowId))
             it.findNavController().navigate(R.id.navigation_details, bundle)

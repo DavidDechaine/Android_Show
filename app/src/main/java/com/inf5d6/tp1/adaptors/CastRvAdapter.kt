@@ -26,9 +26,11 @@ class CastRvAdapter (private val cast : MutableList<Role>):
     }
 
     override fun onBindViewHolder(holder: CastViewHolder, position: Int) {
+        ////Binding the views to variables
         val imgCast = holder.view.findViewById<ImageView>(R.id.seasonImg)
         val castName = holder.view.findViewById<TextView>(R.id.seasonNb)
         val castRole = holder.view.findViewById<TextView>(R.id.nbEpisode)
+        //Displaying the Cast pictures with Picasso and the cast name and role to the textview
         Picasso.get().load(this.cast[position].imgURL).into(imgCast)
         castName.text = this.cast[position].name
         castRole.text = this.cast[position].character

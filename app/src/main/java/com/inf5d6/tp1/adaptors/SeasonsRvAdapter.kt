@@ -23,10 +23,11 @@ class SeasonsRvAdapter (private val seasons : MutableList<Season>):
     }
 
     override fun onBindViewHolder(holder: SeasonsViewHolder, position: Int) {
-
+        //Binding the views to variables
         val seasonNumber = holder.view.findViewById<TextView>(R.id.seasonNb)
         val episodes= holder.view.findViewById<TextView>(R.id.nbEpisode)
         val imgSeason = holder.view.findViewById<ImageView>(R.id.seasonImg)
+        //Displaying the season image with Picasso and the season number to the textview
         Picasso.get().load(this.seasons[position].imgURL).into(imgSeason)
         seasonNumber.append(this.seasons[position].number.toString())
         episodes.text = this.seasons[position].episodeCount.toString() + " Episodes"
