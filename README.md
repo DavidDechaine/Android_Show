@@ -1,4 +1,5 @@
 ## Application Android Tv Shows
+Réalisation d'une application qui permet de se connecter à un compte (le compte est déjà entré dans la page login), de s'informer sur des séries et de pouvoir les ajouter ou supprimer de sa liste personnelle d'épisodes favoris.
 # API
 *Swagger*:  
 [Documentation de l'API](https://tvshowdbapi.herokuapp.com/)
@@ -26,6 +27,9 @@
 - Volley (Requête à un API)
 - Désérialisation Gson
 - Utilisation de models pour Désérialisation
+- Librairie Picasso
+- Bearer Token
+- Implémentation d'un formulaire
 ## Authors
 
 - [David Dechaine](https://github.com/DavidDechaine)
