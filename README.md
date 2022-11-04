@@ -1,5 +1,5 @@
 ## Application Android Tv Shows
-Réalisation d'une application qui permet de se connecter à un compte (le compte est déjà entré dans la page login), de s'informer sur des séries et de pouvoir les ajouter ou supprimer de sa liste personnelle d'épisodes favoris.
+Réalisation d'une application qui permet de se connecter à un compte (le compte est déjà entré dans la page login), de s'informer sur des séries et de pouvoir les ajouter ou supprimer de sa liste personnelle d'émissions favoris.
 # API
 *Swagger*:  
 [Documentation de l'API](https://tvshowdbapi.herokuapp.com/)
