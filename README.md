@@ -24,7 +24,7 @@ Réalisation d'une application qui permet de se connecter à un compte (le compt
 - ViewModels (MVVM)
 - ViewModelFactory
 - La navigation et la barre de navigation
-- Volley (Requête à un API)
+- Volley (Requête à une API)
 - Désérialisation Gson
 - Utilisation de models pour Désérialisation
 - Librairie Picasso
@@ -33,3 +33,6 @@ Réalisation d'une application qui permet de se connecter à un compte (le compt
 ## Authors
 
 - [David Dechaine](https://github.com/DavidDechaine)
+
+## À ne pas oublier
+Rajouter votre local.propreties pour la location de votre SDK
